@@ -41,10 +41,10 @@ function Wordmark({ onClick }) {
   return (
     <a href="#top" className="wordmark" onClick={onClick} aria-label="Varisya home">
       <span className="wordmark__mark" aria-hidden="true">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-          <rect x="1.1" y="1.1" width="27.8" height="27.8" rx="7" stroke="currentColor" strokeWidth="1.4" opacity=".5"/>
-          <path d="M8 8.5 15 21l7-12.5" stroke="currentColor" strokeWidth="2.1" strokeLinecap="round" strokeLinejoin="round"/>
-          <circle cx="15" cy="21" r="1.7" fill="currentColor"/>
+        <svg width="28" height="28" viewBox="0 0 75.4 76.4" fill="currentColor">
+          <path d="M26.6 0.2C26.2 0.7 0.5 26.4 0.3 26.6L0.0 26.7L0.0 27.0L0.0 27.3L0.2 27.4L0.4 27.5L5.8 27.5L11.3 27.5L11.5 27.7L11.7 27.9L11.7 32.8L11.7 37.8L11.8 38.0L11.9 38.2L12.1 38.2L12.4 38.2L12.6 37.9C12.7 37.8 18.5 32.0 25.4 25.0L38.1 12.3L38.1 6.4L38.1 0.4L37.9 0.2L37.7 0.0L32.2 0.0L26.8 0.0L26.6 0.2Z"/>
+          <path d="M57.9 0.2C57.8 0.4 57.7 0.5 57.7 0.5C57.7 0.6 57.6 0.7 57.5 0.8L57.3 1.0L56.7 1.0L56.2 1.0L56.0 1.2C55.6 1.7 16.1 41.1 15.9 41.3L15.7 41.4L15.7 41.7L15.7 42.0L15.9 42.1L16.1 42.2L24.4 42.2L32.8 42.2L33.0 42.4C33.1 42.5 33.4 42.8 33.7 43.1L34.2 43.6L34.2 51.5L34.2 59.4L34.3 59.6L34.4 59.7L34.7 59.7L35.0 59.7L35.1 59.5C35.2 59.3 44.3 50.2 55.3 39.2L75.4 19.2L75.4 10.3L75.4 1.5L74.9 1.0C74.6 0.7 74.3 0.4 74.2 0.3L74.0 0.0L66.1 0.0L58.1 0.0L57.9 0.2Z"/>
+          <path d="M62.9 38.4C62.4 39.0 37.7 63.7 37.5 63.8L37.2 64.0L37.2 64.3L37.2 64.5L37.4 64.6L37.6 64.7L42.6 64.7L47.5 64.7L47.7 64.9L47.9 65.1L47.9 70.6L47.9 76.0L48.0 76.2L48.1 76.4L48.4 76.4L48.7 76.4L48.9 76.1C48.9 76.0 55.0 70.0 62.2 62.7L75.4 49.5L75.4 44.1L75.4 38.7L75.2 38.5L75.0 38.3L69.0 38.3L63.0 38.3L62.9 38.4Z"/>
         </svg>
       </span>
       <span className="wordmark__name">Varisya</span>
