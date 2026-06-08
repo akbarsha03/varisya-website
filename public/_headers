@@ -1,0 +1,17 @@
+# Cloudflare Pages headers — https://developers.cloudflare.com/pages/configuration/headers/
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# Long-cache immutable static assets
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+/*.jsx
+  Cache-Control: public, max-age=31536000, immutable
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+/og-image.png
+  Cache-Control: public, max-age=31536000, immutable
