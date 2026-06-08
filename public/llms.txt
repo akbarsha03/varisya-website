@@ -1,0 +1,26 @@
+# Varisya
+
+> Varisya is a premium technology partner that customizes four products — Books, Inventory, Billing, and Storefront — to each client's exact workflows. The suite is self-hosted on the client's own infrastructure, white-labelled under their brand, and delivered as a monthly retainer that bundles dedicated engineering with SLA-grade support. Users are always unlimited (never priced per seat).
+
+## What Varisya is
+- A premium, customization-led technology partner — the premium counterpart to 399apps.
+- Four proven products sharing one source of truth: Books (accounting, GST, TDS, ledgers), Inventory (stock, warehouses, batches), Billing (invoicing, pricing rules, collections), and Storefront (a commerce front wired to the same data).
+- Self-hosted and white-label: clients own their data and their infrastructure; Varisya provides the engineering.
+- Delivered as a monthly retainer: ongoing customization plus premium technical support — not a per-seat SaaS licence.
+
+## Pricing (indicative; scoped per client; INR)
+- Essential — from ₹39,000/month: up to 2 of the 4 products, ~2 dev-days/month (pooled engineer), next-business-day email support, unlimited users.
+- Professional — ₹79,000/month: all 4 products, dedicated engineer (~6–8 dev-days/month), same-day priority support (phone, WhatsApp, email), unlimited users.
+- Enterprise — custom from ₹1,49,000/month: all 4 products plus custom modules, dedicated SLA-bound pod, 24×7 support with an hours-level SLA, HA/multi-site, SSO and audit logs.
+- Hosting and third-party usage (SMS, WhatsApp Business API, payment gateways) are billed at cost, with no markup.
+
+## Key facts
+- Self-hosted, white-label, unlimited users — never per-seat SaaS.
+- Onboarding, data migration, version upgrades and ongoing maintenance are included.
+- Sales is consultative: every plan routes to a booked consultation.
+
+## Links
+- Website: https://varisya.com/
+- Pricing: https://varisya.com/#pricing
+- FAQ: https://varisya.com/#faq
+- Contact: hello@varisya.com
