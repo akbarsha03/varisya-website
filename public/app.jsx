@@ -1,4 +1,4 @@
-/* global React, ReactDOM, Nav, Hero, Strip, Products, Model, Pricing, CtaBand, Footer, Icon, Btn,
+/* global React, ReactDOM, Nav, Hero, Strip, Products, Model, Pricing, FAQ, CtaBand, Footer, Icon, Btn,
    useTweaks, TweaksPanel, TweakSection, TweakRadio, TweakToggle, TweakColor, TweakSelect, TweakButton, useReveal */
 const { useState, useEffect } = React;
 
@@ -159,6 +159,7 @@ function App() {
       <Products />
       <Model />
       <Pricing layout={t.pricingLayout} setLayout={(v) => setTweak("pricingLayout", v)} onConsult={openConsult} />
+      <FAQ />
       <CtaBand onConsult={openConsult} />
       <Footer onConsult={openConsult} />
       {modal && <ConsultModal onClose={() => setModal(false)} />}

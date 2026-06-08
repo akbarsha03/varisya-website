@@ -116,6 +116,7 @@ function Nav({ onConsult }) {
           <a className="nav__link" href="#products">Products</a>
           <a className="nav__link" href="#model">How it works</a>
           <a className="nav__link" href="#pricing">Pricing</a>
+          <a className="nav__link" href="#faq">FAQ</a>
           <a className="nav__link" href="#contact">Contact</a>
         </div>
         <div className="nav__right">
@@ -434,6 +435,59 @@ function CtaBand({ onConsult }) {
   );
 }
 
+/* ===================== FAQ ===================== */
+const FAQS = [
+  {
+    q: "What is Varisya?",
+    a: "Varisya is a premium technology partner that customizes four products — Books, Inventory, Billing and Storefront — to your exact workflows. It is deployed on your own infrastructure, white-labelled under your brand, and delivered as a monthly retainer that bundles dedicated engineering with SLA-grade support.",
+  },
+  {
+    q: "Is Varisya self-hosted or SaaS?",
+    a: "Self-hosted. The suite runs on your own infrastructure and you own your data — there is no per-seat SaaS licence. Everything is white-label, so it ships under your brand, not ours.",
+  },
+  {
+    q: "How is Varisya priced?",
+    a: "As a monthly retainer, never per seat — users are always unlimited. Plans start at ₹39,000/month (Essential), ₹79,000/month (Professional), and custom from ₹1,49,000/month (Enterprise). Hosting and any third-party usage are billed at cost with no markup, and the final figure is scoped per client.",
+  },
+  {
+    q: "Which products are included?",
+    a: "Books (accounting, GST, TDS and ledgers), Inventory (stock, warehouses and batches), Billing (invoicing, pricing rules and collections), and Storefront (a commerce front wired to the same data). They share one source of truth, so finance, stock and commerce never drift apart.",
+  },
+  {
+    q: "What support and SLA do I get?",
+    a: "Support is tiered: next-business-day email on Essential; same-day priority over phone, WhatsApp and email on Professional; and 24×7 cover with an hours-level SLA and a dedicated account manager on Enterprise.",
+  },
+  {
+    q: "How is Varisya different from off-the-shelf software?",
+    a: "Off-the-shelf tools force your operation to fit the software. Varisya does the opposite — a dedicated engineer or pod continuously tailors the suite to your workflows every month, self-hosted under your brand. It is the premium, customization-led counterpart to 399apps.",
+  },
+];
+
+function FAQ() {
+  return (
+    <section className="section" id="faq">
+      <div className="wrap">
+        <div className="shead reveal">
+          <span className="eyebrow">FAQ</span>
+          <h2 className="h2">Questions, answered.</h2>
+          <p className="lede">The essentials on what Varisya is, how it is deployed, and how pricing works.</p>
+        </div>
+        <div className="faq reveal">
+          {FAQS.map((f, i) => (
+            <details className="faq__item" key={i} open={i === 0}>
+              <summary className="faq__q">
+                <span>{f.q}</span>
+                <span className="faq__chev" aria-hidden="true"><Icon name="arrow" size={18} sw={1.8} /></span>
+              </summary>
+              <div className="faq__a"><p>{f.a}</p></div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Footer({ onConsult }) {
   return (
     <footer className="footer">
@@ -477,4 +531,4 @@ function Footer({ onConsult }) {
   );
 }
 
-Object.assign(window, { Nav, Hero, Strip, Products, Model, Pricing, CtaBand, Footer });
+Object.assign(window, { Nav, Hero, Strip, Products, Model, Pricing, FAQ, CtaBand, Footer });

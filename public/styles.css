@@ -547,3 +547,26 @@ table.ctable { width: 100%; border-collapse: collapse; min-width: 720px; }
 .center { text-align: center; }
 .mt-s { margin-top: 14px; } .mt-m { margin-top: 26px; } .mt-l { margin-top: 44px; }
 .divider { height: 1px; background: var(--line); border: none; }
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+.faq__item {
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--surface); padding: 0 22px; overflow: hidden;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.faq__item[open] { border-color: var(--line-strong); box-shadow: var(--shadow); }
+.faq__q {
+  list-style: none; cursor: pointer; user-select: none;
+  display: flex; align-items: center; justify-content: space-between; gap: 18px;
+  padding: 20px 0; font-family: var(--font-display); font-weight: 600;
+  font-size: 18px; letter-spacing: -0.01em; color: var(--ink);
+}
+.faq__q::-webkit-details-marker { display: none; }
+.faq__chev { flex: none; color: var(--accent); display: inline-flex; transform: rotate(90deg); transition: transform .2s ease; }
+.faq__item[open] .faq__chev { transform: rotate(-90deg); }
+.faq__a { padding: 0 0 22px; max-width: 70ch; }
+.faq__a p { color: var(--ink-soft); font-size: 16px; line-height: 1.65; margin: 0; }
+@media (max-width: 560px) { .faq__q { font-size: 16px; } }
