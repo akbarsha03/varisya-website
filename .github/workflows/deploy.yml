@@ -13,9 +13,18 @@ jobs:
       deployments: write
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install dependencies
+        run: npm ci
+      - name: Build (prerender + bundle)
+        run: npm run build
+      - name: Verify hydration
+        run: npm test
       - name: Publish to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public --project-name=varisya --branch=main
+          command: pages deploy dist --project-name=varisya --branch=main

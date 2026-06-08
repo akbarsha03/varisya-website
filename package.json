@@ -1,0 +1,15 @@
+{
+  "name": "varisya-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node test-hydrate.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.5",
+    "jsdom": "^24.1.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
